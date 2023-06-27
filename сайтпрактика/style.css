@@ -1,0 +1,84 @@
+li{
+    list-style: none;
+    padding-left: 10px;
+}
+.wrapper {
+width:auto;
+height:auto;
+
+}
+.header {
+    display:flex;
+justify-content: center;
+align-items:center;
+
+}
+
+.container {
+
+
+}
+.header__navigation {
+
+
+}
+.header__list {
+display:flex;
+
+}
+.li-blue {
+    color: #667EEA;
+
+
+}
+.li-font {
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 500;
+
+}
+.li-gray {
+    color: #A6A6A6;
+
+}
+.header__icon-№1 {
+
+
+}
+.header__phone-icon {
+
+
+}
+.li-phone {
+
+
+}
+.li-font-big {
+
+
+}
+.header__language {
+
+
+}
+.header__arrow {
+
+
+}
+.header__icon-№2 {
+
+
+}
+.ball {
+
+
+}
+
+.header__personal-area {
+
+
+}
+.header__navigation2 {
+
+
+}
