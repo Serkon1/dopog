@@ -6,19 +6,7 @@ $header_padding_item_of_list4:33px;
 $header_padding_item_of_list5:22px;
 $header_padding_item_of_list6:24px;
 
-@mixin redball(){
-    &:after{
-        content: "";
-    display: flex;
-    width: 6px;
-    height: 6px;
-    background: #FF3535;
-    border-radius: 6px;
-    flex-shrink: 0;
-    position:absolute;
-    left:24px;
-    }
-}
+
 *{
     box-sizing: border-box;
 }
@@ -62,12 +50,12 @@ a{
         transform: translateY(3px);
 }
 .img-arrow{
-    width: 6px;
-    height: 6px;
-    background-image: url(../Polygon\ 3.png);
+    width:0;
+    height:0;
+    border:5px solid transparent;
+    border-top:5px solid #787878;
     flex-shrink: 0;
-
-        margin-left:3px;
+    margin-left:3px;
     
 }
 .img-icon{
@@ -75,11 +63,10 @@ a{
     height: 33.668px;
     background-image: url(../Vector.png);
     flex-shrink: 0;
-    position:relative;
     margin-right:11.58px;
     transform: translateY(6px);
     
-   @include redball();
+
 
     }
 
@@ -88,6 +75,8 @@ a{
     .header__list{
         display:flex;
         align-items:center;
+        position:relative;
+
         // &:nth-child(2){
         //     position: relative;
         // }
@@ -184,6 +173,24 @@ a{
             }
         }
 }
+
+.red-ball{
+    display: flex;
+    width: 6px;
+    height: 6px;
+    background: #FF3535;
+    border-radius: 6px;
+    flex-shrink: 0;
+    position:absolute;
+  
+}
+.header__icon-ball{
+    left:24px;
+    top:8px;
+}
+
+
+
 .infinity-line{
     width:auto;
     height:89px;
@@ -218,7 +225,7 @@ a{
         
         position:relative;
         
-        @include redball();
+      
 
 
         .btn__text {
@@ -229,6 +236,13 @@ a{
         font-weight: 400;
         line-height: normal;
         }
+        .header__btn-ball{
+
+            left:67px;
+            bottom: 13px;
+        }
+
+
         .btn__arrow {
             width: 7px;
             height: 7px;
@@ -269,7 +283,17 @@ a{
        
     }
 
+
+
+
+
 }
+
+
+
+
+
+
 .btn{
     
 
@@ -281,6 +305,6 @@ a{
 
 }
   
-      
+
    
 

@@ -38,9 +38,10 @@ a {
 }
 
 .img-arrow {
-  width: 6px;
-  height: 6px;
-  background-image: url(../Polygon\ 3.png);
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top: 5px solid #787878;
   flex-shrink: 0;
   margin-left: 3px;
 }
@@ -50,25 +51,14 @@ a {
   height: 33.668px;
   background-image: url(../Vector.png);
   flex-shrink: 0;
-  position: relative;
   margin-right: 11.58px;
   transform: translateY(6px);
-}
-.img-icon:after {
-  content: "";
-  display: flex;
-  width: 6px;
-  height: 6px;
-  background: #FF3535;
-  border-radius: 6px;
-  flex-shrink: 0;
-  position: absolute;
-  left: 24px;
 }
 
 .header__list {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .header__navigation {
@@ -128,6 +118,21 @@ a {
   color: #494949;
 }
 
+.red-ball {
+  display: flex;
+  width: 6px;
+  height: 6px;
+  background: #FF3535;
+  border-radius: 6px;
+  flex-shrink: 0;
+  position: absolute;
+}
+
+.header__icon-ball {
+  left: 24px;
+  top: 8px;
+}
+
 .infinity-line {
   width: auto;
   height: 89px;
@@ -161,17 +166,6 @@ a {
   border: 3px solid #667EEA;
   position: relative;
 }
-.header__navigation-aside .header__btn:after {
-  content: "";
-  display: flex;
-  width: 6px;
-  height: 6px;
-  background: #FF3535;
-  border-radius: 6px;
-  flex-shrink: 0;
-  position: absolute;
-  left: 24px;
-}
 .header__navigation-aside .header__btn .btn__text {
   color: #FFF;
   font-size: 16px;
@@ -179,6 +173,10 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.header__navigation-aside .header__btn .header__btn-ball {
+  left: 67px;
+  bottom: 13px;
 }
 .header__navigation-aside .header__btn .btn__arrow {
   width: 7px;
