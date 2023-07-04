@@ -1,3 +1,112 @@
+.hero {
+  height: 550px;
+}
+
+.hero__container {
+  height: 550px;
+  display: flex;
+  width: auto;
+  padding: 0px;
+}
+
+.hero__desc {
+  flex-basis: 50%;
+  flex-shrink: 1;
+  display: flex;
+  justify-content: end;
+}
+
+.hero__desc-item {
+  width: 468px;
+  height: 275px;
+  margin-top: 93px;
+  margin-right: 89px;
+  margin-left: 444px;
+}
+
+.hero__tittle-item {
+  width: 263px;
+  height: 70px;
+  display: flex;
+}
+.hero__tittle-item .orange-line {
+  width: 4px;
+  height: 70px;
+  flex-shrink: 0;
+  background: linear-gradient(180deg, #F05F65 0%, #FC9963 100%);
+}
+.hero__tittle-item .hero__tittle {
+  color: #333;
+  font-size: 62px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 108.9%;
+  margin-left: 17px;
+  margin-bottom: 7px;
+}
+
+.hero__about {
+  color: #4A4A4A;
+  font-size: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 30px;
+}
+
+.hero__button {
+  font-size: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: white;
+  padding: 12px 45px;
+  border: 2px solid white;
+  border-radius: 46px;
+  background: linear-gradient(90deg, #F05E65 0%, #FC9A63 100%);
+  box-shadow: 0px 0px 15px 0px rgba(246, 124, 100, 0.3);
+  margin-top: 30px;
+}
+
+.hero__img {
+  overflow: hidden;
+  flex-basis: 50%;
+  flex-shrink: 1;
+  background-color: #4B4951;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+}
+.hero__img .gray-line {
+  width: 71px;
+  height: 550px;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.15);
+}
+.hero__img .auto {
+  width: 1316px;
+  height: 548px;
+  margin-left: -51px;
+  margin-top: 127px;
+  margin-right: 320px;
+}
+.hero__img .auto .auto__object {
+  background-image: url(../avto\ 1.png);
+  width: 658px;
+  height: 274px;
+  flex-shrink: 0;
+}
+.hero__img .auto .reflection {
+  background: url(../avto\ reflection.png);
+  opacity: 30%;
+  width: 658px;
+  height: 274px;
+  flex-shrink: 0;
+}
+
 * {
   box-sizing: border-box;
 }
