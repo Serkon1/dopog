@@ -1,0 +1,67 @@
+$smeshenie1:137px;//из-за трансформов сместилось
+.relevance{
+    margin-top: (200-$smeshenie1);//
+    width: 1110px;
+height: 269px;
+flex-shrink: 0;
+border-radius: 20px;
+background: #FFF;
+overflow: hidden;
+}
+.relevance__content{
+
+    width: 567px;
+height: 169px;
+// margin-left:65px;
+// margin-top:50px;
+transform: translate(65px, 50px);
+//margin-bottom: 50px;
+}
+.relevance__tittle {
+    font-size: 48px;
+
+line-height: normal;
+}
+
+.relevance__desc {
+    margin-top:50px;
+    width:556px;
+    height: 60px;
+    display:flex;
+    
+}
+.relevance__desc-item {
+width: 252px;
+height: 60px;
+}
+.key {
+    font-size: 18px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.value {
+
+color: #FD7255;
+font-size: 24px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.48px;
+margin-top:10px;
+
+    span{
+        color:black;
+
+    }
+}
+.relevance__gradient{
+    width: 1149px;
+height: 413.234px;
+flex-shrink: 0;
+border-radius: 1149px;
+transform: translate(392px, -413px);
+}
+

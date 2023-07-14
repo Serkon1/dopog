@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./stylee/final style.css">
+    <link rel="stylesheet" href="./stylee/main.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<script src="script.js"></script>
     
 </head>
 <body>
@@ -88,7 +89,7 @@
                     
                     <!-- <div class="container container-relative"> -->
 
-                            <div class="hero__desc">
+                            <div class="hero__desc shadow">
                                 <div class="hero__desc-item">
 
                                     <div class="hero__tittle-item">
@@ -112,10 +113,10 @@
                 </div>
             
         <div class="courses container">
-            <div class="cours">
+            <div class="cours shadow">
 
                 <div class="cours-item">
-                    <div class="cours__text">
+                    <div class="cours__text text">
                         Перевозка веществ и изделий класса 1
                         и базовый курс
                     </div>
@@ -123,10 +124,10 @@
                 </div>
                 <div class="gradient hero__gradient"></div>
             </div>
-            <div class="cours">
+            <div class="cours shadow">
                 
                 <div class="cours-item">
-                    <div class="cours__text">
+                    <div class="cours__text text">
                         Перевозка веществ в цистернах
                         и базовый курс
                     </div>
@@ -135,9 +136,9 @@
                 <div class="gradient hero__gradient"></div>
 
             </div>
-            <div class="cours">
+            <div class="cours shadow">
                 <div class="cours-item">
-                    <div class="cours__text">
+                    <div class="cours__text text">
                         Перевозка радиоактивных материалов класса 7 и базовый курс
                     </div>
                     <div class="cours__time">28 + 12 часов</div>
@@ -146,29 +147,278 @@
 
             </div>
         </div>
-        </section class="relevance container">
-            <div class="relevance__content">
-                <div class="relevance__tittle tittle">Для кого проводится:</div>
-                <div class="relevance__desc">
-                    <div class="relevance__category">
-                        <span class="key">Водители категорий:</span>
-                        <span class="value">B  C  C1  BE  CE  C1E</span>
+        </section class="relevance">
+            <div class="relevance container shadow">
+                <div class="relevance__content">
+                    <div class="relevance__tittle tittle">Для кого проводится:</div>
+                    <div class="relevance__desc">
+                        <div class="relevance__desc-item">
+                            <div class="key">Водители категорий:</div>
+                            <div class="value">B  C  C1  BE  CE  C1E</div>
+                        </div>
+                        <div class="relevance__desc-item">
+                            <div class="key">Водительский стаж:</div>
+                            <div class="value"><span>Не менее</span> трех лет</div>
+                        </div>
                     </div>
-                    <div class="relevance__experience">
-                        <span class="key">Водительский стаж:</span>
-                        <span class="value">Не менее трех лет</span>
+                </div>
+                <div class="gradient relevance__gradient"></div>
+
+            </div>
+        
+        <section class="products">
+            <div class="products__container container">
+                <div class="products__head">
+                    <div class="products__tittle tittle">Программа обучения</div>
+                    <div class="products__courses">
+                        <button class="products__course shadow" data-number="1">
+                            Базовый курс и 1 класс
+                        </button>
+                        <button class="products__course active-block shadow" data-number="2">
+                            Базовый курс и цистерны
+                        </button>
+                        <button class="products__course shadow" data-number="3">
+                            Базовый курс и 7 класс
+                        </button>
+                    </div>
+                </div>
+                <!-- нижняя часть блока product -->
+                <div class="product__body shadow">
+                    
+                        <div class="product__item">
+                            <div class="product__tittle tittle">
+                                Базовый курс
+                                <span>и цистерны</span>
+                            </div>
+                            <ul class="product__list-info">
+                                <li class="item item__text text">Очно</li>
+                                <li class="item">
+                                    <img src="./clock.png" alt="часы" class="product__img-wrap"></img>
+                                    <div class="item__text text">40 часов</div>
+                                </li>
+                                <li class="item">
+                                    <div class="item__price-text">Стоимость курса:</div>
+                                    <div class="item__price text">11 600 ₽</div>
+                                </li>
+                            </ul>
+                        </div>
+    
+                    
+                    <div class="product__body-elements">
+                        <ul class="product__body-elements-list">
+                            <li class="product__body-elements-item">
+                                <div class="body-elements-text">
+                                    Специальные требования, предъявляемые к
+                                    цистернам, транспортным средствам и
+                                    дополнительному оборудованию
+                                </div>
+                                <label>
+                                    <input type="checkbox" name="checkA">
+                                    <div class="body-elements-arrow arrow"></div>
+                                </label>
+                            </li>
+                            <li class="product__body-elements-item">
+                                <div class="body-elements-text">
+                                    Особенности движения транспортных средств с
+                                    загруженными и порожними цистернами
+                                </div>
+                                <label>
+                                    <input type="checkbox" name="checkB">
+                                    <div class="body-elements-arrow arrow"></div>
+                                </label>
+                            </li>
+                            <li class="product__body-elements-item">
+                                <div class="body-elements-text">
+                                    Общие теоретические знания в области различных
+                                    систем наполнения и опорожнения цистерн
+                                </div>
+                                <label>
+                                    <input type="checkbox" name="checkC">
+                                    <div class="body-elements-arrow arrow"></div>
+                                </label>
+                            </li>
+                            <li class="product__body-elements-item">
+                                <div class="body-elements-text">
+                                    Специальные дополнительные положения,
+                                    регулирующие использование цистерн и транспортных
+                                    средств
+                                </div>
+                                <label>
+                                    <input type="checkbox"  name="checkD">
+                                    <div class="body-elements-arrow arrow"></div>
+                                </label>
+                            </li>
+                            <li class="product__body-elements-item">
+                                <div class="body-elements">
+                                    <div class="body-elements-text">
+                                    Общие требования
+                                    </div>
+                                    <div class="product__sublist displaynone">
+                                        <ul class="sublist">
+                                            <li class="subitem">Общие сведения о Европейском соглашении 
+                                                о международной дорожной перевозке опасных грузов (ДОПОГ)
+                                            </li>
+                                            <li class="subitem">
+                                                Присоединение России к ДОПОГ
+                                            </li>
+                                            <li class="subitem">
+                                                Участники ДОПОГ
+                                            </li>
+                                            <li class="subitem">
+                                                Регулярность пересмотра и обновления положений ДОПОГ
+                                            </li>
+                                            <li class="subitem">
+                                                Сфера применения ДОПОГ в Российской Федерации
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <label>
+                                    <input type="checkbox" class="fake-check" name="checkE">
+                                    <div class="body-elements-arrow arrow"></div>
+                                </label>
+                            </li>
+                            <li class="product__body-elements-item">
+                                <div class="body-elements-text">
+                                    Основные виды опасности при перевозке опасных
+                                    грузов
+                                </div>
+                                <label>
+                                    <input type="checkbox" name="checkF">
+                                    <div class="body-elements-arrow arrow"></div>
+                                </label>
+                            </li>
+                            <li class="product__body-elements-item">
+                                <div class="body-elements-text">
+                                    Классификация и общая характеристика опасных
+                                    грузов
+                                </div>
+                                <label>
+                                    <input type="checkbox" name="checkG">
+                                    <div class="body-elements-arrow arrow"></div>
+                                </label>
+                            </li>
+                            <li class="product__body-elements-item">
+                                <div class="body-elements-text">Маркировка опасных грузов</div>
+                                <label>
+                                    <input type="checkbox" name="checkH">
+                                    <div class="body-elements-arrow arrow"></div>
+                                </label>
+                            </li>
+                            <li class="product__body-elements-item">
+                                <div class="body-elements-text">Требования к транспортным средствам</div>
+                                <label>
+                                    <input type="checkbox"  name="checkI">
+                                    <div class="body-elements-arrow arrow"></div>
+                                </label>
+                            </li>
+                            <li class="product__body-elements-item">
+                                <div class="body-elements-text">Транспортно-сопроводительные документы</div>
+                                <label>
+                                    <input type="checkbox"  name="checkJ">
+                                    <div class="body-elements-arrow arrow"></div>
+                                </label>
+                            </li>
+                            <li class="product__body-elements-item">
+                                <div class="body-elements-text">Обязанности и ответственность водителя при перевозке опасных грузов</div>
+                                <label>
+                                    <input type="checkbox"  name="checkK">
+                                    <div class="body-elements-arrow arrow"></div>
+                                </label>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        
-         <section>
-
         </section>
-        <section>
+        <section class="responsibility">
+            <div class="responsibility">
+                <div class="responsibility__container container">
+                    <div class="responsibility__item">
+                        <div class="responsibility__header">
+                            <div class="responsibility__tittle tittle white">Возможные штрафы:</div>
+                            <div class="responsibility__img"></div>
+                        </div>
+                        <div class="responsibility__body">
+                            <div class="responsibility-text">Перевозка опасных грузов автомобильным транспортом требует повышенного уровня безопасности,
+                             так как грузы имеют опасный тип веществ, наносимый вред существенно превосходит уровень обычного рода ДТП.</div>
+                            <div class="responsibility-text white">Несоблюдение правил перевозки опасных грузов чревато штрафами:</div>
+                        </div>
+                        <div class="responsibility__group-fine">
+                            <div class="item-fine">
+                                <div class="responsibility-text black">С водителя взыскивается</div>
+                                <div class="responsibility-price">1 000 — 1 500 руб</div>
+                            </div>
+                            <div class="item-fine">
+                                <div class="responsibility-text black">С ответственного лица</div>
+                                <div class="responsibility-price">5 000 — 10 000 руб</div>
+                            </div>
+                            <div class="item-fine">
+                                <div class="responsibility-text black">Перевозчик выплачивает</div>
+                                <div class="responsibility-price">150 000 — 250 000 руб</div>
+                            </div>
+                        </div>
+                        <div class="responsibility-text">штрафы накладываются при несоблюдении технических условий перевозки.</div>
+                    </div>
+                </div>
+            </div>
+        </section class="advantage">
+        <div class="advantage__container container">
+            <div class="advantage__content">
+                <div class="advantage__tittle tittle">Преимущества</div>
+                <div class="advantage__body">
+                    <ul class="advantage__desc-1">
+                        <li class="advantage-item">
+                            <div class="advantage-img"></div>
+                            <div class="advantage-text">Консультационная поддержка в течение
+                                <span class="bold">трех месяцев</span></div>
+                        </li>
+                        <li class="advantage-item">
+                            <div class="advantage-img"></div>
+                            <div class="advantage-text"><span class="bold">Кешбэк 7%</span> при оплате картой МИР</div>
+                        </li>
+                        <li class="advantage-item">
+                            <div class="advantage-img"></div>
+                            <div class="advantage-text"><span class="bold">Государственная лицензия</span>
+                                № 026 от 23.04.2018</div>
+                        </li>
+                    </ul>
+                    <ul class="advantage__desc-2">
+                        <li class="advantage-item">
+                            <div class="advantage-img"></div>
+                            <div class="advantage-text">Если курс не подошел - <span class="bold">вернем деньги</span> обратно.</div>
+                            <div class="advantage-subtext">*проводится перерасчёт оставшейся части денежных средств за непосещенные занятия.</div>
+                        </li>
+                        <li class="advantage-item">
+                            <div class="advantage-img"></div>
+                            <div class="advantage-text">Обучение проводят опытные <span class="bold">преподаватели-практики</span></div>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <section class="discount">
+            <div class="discount">
+                <div class="container discount__container">
+                    <div class="back-fon back-fon--1">скидку</div>
+                    <div class="back-fon back-fon--2">10%</div>
+                    <div class="discount__content">
+                        <div class="gradient discount__gradient"></div>
+                        <div class="discount__item">
+                            <div class="discount__box-1">
+                                <div class="discount__text">Успей записаться до 11.06.22 и получи</div>
+                                <div class="discount__text discount__text--black">Забронируй место до... и получи скидку:</div>
+                            </div>
 
-        </section>
-        <section>
-
+                            <div class="discount__box-2">
+                                <div class="discount__tittle tittle">скидку 10%</div>
+                                <button class="discount__btn">Записаться на курс</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section>
 

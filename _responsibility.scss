@@ -1,0 +1,92 @@
+.responsibility {
+    background: #4B4951;
+    width:auto;
+    height: 463px;
+    margin-top:100px;
+
+    
+}
+.responsibility__container{
+    height: 463px;
+    flex-shrink: 0;
+    padding: 50px 0;
+}
+
+.responsibility__item {
+    width: 1110px;
+height: 363px;
+display: flex;
+flex-direction: column;
+    justify-content: space-between;
+    
+}
+.responsibility__header {
+    width: 1111px;
+height: 73px;
+flex-shrink: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.responsibility__tittle {
+    
+font-size: 48px;
+
+line-height: normal;
+}
+.responsibility__img{
+    width: 70px;
+    height: 61px;
+    background-image: url(../icon-danger2.png);
+    background-size:cover;
+
+}
+.responsibility__body {
+    width: 844px;
+    height: 79px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.responsibility-text {
+    color: #C4C4C4;
+font-family: Roboto;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.white {
+    color: #FFF;
+}
+.responsibility__group-fine {
+    width: 1110px;
+height: 117px;
+display:flex;
+justify-content: space-between;
+}
+.item-fine {
+    width: 350px;
+height: 117px;
+flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.black {
+    color: black;
+}
+.responsibility-price {
+    color: #F67D64;
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top:10px;
+}

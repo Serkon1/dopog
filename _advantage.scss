@@ -1,0 +1,126 @@
+.advantage__container {
+    margin-top:200px;
+}
+.container {
+}
+.advantage__content {
+}
+.advantage__tittle {
+    line-height: normal;
+    font-size: 48px;
+}
+.advantage__body{
+    margin-top:49px;
+    width: 1112px;
+height: 565px;
+}
+.advantage__desc-1 {
+    width: 1112px;
+    display:flex;
+    justify-content: space-around;
+
+    .advantage-item {
+        
+        &:nth-child(1){
+            .advantage-img {
+                background-image: url(../наушники.png);
+                }
+                .advantage-text {
+                    width: 195px;
+                }
+        }
+        &:nth-child(2){
+            .advantage-img {
+                background-image: url(../карты.png);
+                
+                }
+                .advantage-text {
+                    width: 204px;
+                }
+        }
+        &:nth-child(3){
+            .advantage-img {
+            background-image: url(../сертификат.png);
+            }
+            .advantage-text {
+                width: 252px;
+            }
+        }
+    }
+
+}
+.advantage__desc-2 {
+
+    width: 604px;
+height: 255px;
+margin:0 auto;
+display:flex;
+justify-content: space-between;
+    .advantage-item {
+        &:nth-child(1){
+            .advantage-img {
+                background-image: url(../монета.png);
+                
+                }
+                .advantage-text {
+                    width: 210px;
+                }
+        }
+        &:nth-child(2){
+            .advantage-img {
+                background-image: url(../шапка.png);
+                
+                }
+                .advantage-text {
+                    width: 223px;
+                }
+        }
+        
+    }
+
+
+}
+.advantage-item {
+    // width: 210px;
+    width: auto;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    //justify-content: center;
+    align-items: center;
+   
+    
+}
+.advantage-img {
+    border-radius: 20px;
+    box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.05);
+    width: 140px;
+height: 140px;
+background-size: cover;
+flex-shrink: 0;
+    
+}
+.advantage-text {
+    margin-top:10px;
+    color: #333;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight:normal;
+    line-height: normal;
+    text-align: center;
+    
+}
+.advantage-subtext{
+    width: 268px;
+    margin-top:10px;
+    color: #4A4A4A;
+    font-family: Roboto;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: center;
+
+}
